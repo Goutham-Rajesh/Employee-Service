@@ -25,7 +25,7 @@ pipeline {
                 bat "docker rm -f employee-container"
                 bat "docker rm -f employee-image"
                 bat "docker build -t employee-image ."
-                bat "docker run -p 8081:8081 -d --name employee-container employee-image"
+                bat "docker run -p 8082:8082 -d --name employee-container employee-image"
             }
         }
     }
